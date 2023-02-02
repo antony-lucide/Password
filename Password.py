@@ -36,7 +36,7 @@ def generation(maj = True, min = True, penctuation = True):
             mot_de_passe = mot_de_passe + random.choice(equation)
     mdp.set(mot_de_passe)
 
-#Fonction pour copier le résultat dans le presse-papier
+#Fonction pour copier le résultat dans le presse-papier, et pouvoir le re-utilisez
 def copie():
     #Je créer une variable pour récupérer mon résultat dedans
     #J'utilise la librarie pyperclip pour copier ma variable créer et l'associer à mon résultat
@@ -44,7 +44,7 @@ def copie():
     pyperclip.copy(random_mdp)
 
 def Manuellement():
-    manuel.delete(0,END)
+    Taille.delete(0,END)
     length = var1.get()
     lower = "abcdefghijklmnopqrstuvwxyz"
     upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
@@ -66,8 +66,8 @@ def Manuellement():
         print("choissisez un autres mot de passe")
 
 def generate():
-    password1 = manuel.get()
-    manuel.insert(10,password1)
+    password1 = Taille.get()
+    Taille.insert(10,password1)
 
 
 
