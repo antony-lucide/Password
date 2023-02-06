@@ -28,7 +28,7 @@ def Manuellement(mot_de_passe):
 
 #Je déclare d'abord que la variable "mdp", est l'instance de ma fonction generation
 #Ensuite j'encode une variable qui me permettra  d'encoder mon mot de passe crypté entré par l'user et un mot de passe suggérer
-#Ensuite je suis une condition pour vérisier si l'user respecte les Majuscule, minuscule, et chiffre
+#Ensuite je définies une condition pour vérifier si l'user respecte les Majuscules, Minuscules, et chiffres,penctuations
 #Si les conditions sont réspecter alors je print le mot de passe génerer cripter
 #Si les conditions sont pas réspecter alors je lui suggère un mot de passe valide
 mdp = generation()
